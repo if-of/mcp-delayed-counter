@@ -21,6 +21,6 @@ startCommand:
         "app.jar"
       ],
       "env": {
-        "DELAY": config.delay
+        "DELAY_MS": config.delay
       }
     })
