@@ -9,4 +9,7 @@ FROM eclipse-temurin:21-jre-jammy
 WORKDIR /app
 COPY --from=build /app/build/libs/*.jar app.jar
 
+# Set default environment variable for delay in milliseconds
+ENV DELAY_MS=9000
+
 ENTRYPOINT ["java", "-jar", "app.jar"] 
