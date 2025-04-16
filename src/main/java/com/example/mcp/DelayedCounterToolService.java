@@ -17,7 +17,7 @@ public class DelayedCounterToolService {
     public String getFissoIndex() {
         var result = "The FISSO index is at " + counter.incrementAndGet() + " and was created at " + creationTime;
         try {
-            Thread.sleep(30000); // Sleep for 30 seconds (30000 milliseconds)
+            Thread.sleep(9000);
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
             System.err.println("Sleep was interrupted: " + e.getMessage());
