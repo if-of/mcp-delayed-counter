@@ -13,7 +13,7 @@ public class DelayedCounterToolService {
     private final AtomicLong counter = new AtomicLong();
     private final Instant creationTime = Instant.now();
     
-    @Value("${DELAY_MS}")
+    @Value("${DELAY_MS:0}")
     private long delayMs;
 
     @Tool(description = "Get FISSO index")
