@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  wrapper-sse-mcp:
+    image: wrapper-mcp-image:latest
+    ports:
+      - "8080:8080"
+    environment:
+      DELAY_MS: 5000
